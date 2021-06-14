@@ -1,4 +1,4 @@
-package org.wecancodeit.librarydemo;
+package org.wecancodeit.librarydemo.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

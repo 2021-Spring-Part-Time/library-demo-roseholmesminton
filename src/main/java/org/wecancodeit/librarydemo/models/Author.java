@@ -1,4 +1,4 @@
-package org.wecancodeit.librarydemo;
+package org.wecancodeit.librarydemo.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,12 +13,13 @@ import java.util.Objects;
 @Entity
 public class Author {
 
+
     @Id
     @GeneratedValue
     private Long id;
     private String firstName;
     private String lastName;
-    @ManyToMany
+    @ManyToMany(mappedBy = "authors")
     private Collection<Book> books;
 
     public Long getId() {
